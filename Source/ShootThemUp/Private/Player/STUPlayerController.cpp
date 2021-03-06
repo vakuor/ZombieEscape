@@ -41,6 +41,8 @@ void ASTUPlayerController::SetupInputComponent()
 	if(!InputComponent) return;
 
 	InputComponent->BindAction("PauseGame", IE_Pressed, this, &ASTUPlayerController::OnPauseGame);
+	InputComponent->BindAction("Mute", IE_Pressed, this, &ASTUPlayerController::OnMuteSound);
+	InputComponent->BindAction("Use", IE_Pressed, this, &ASTUPlayerController::OnUseAction);
 }
 
 void ASTUPlayerController::OnPauseGame()
@@ -72,4 +74,14 @@ void ASTUPlayerController::OnMuteSound()
 	if(!STUGameInstance) return;
 
 	STUGameInstance->ToggleVolume();
+}
+void ASTUPlayerController::OnUseAction()
+{
+	UWorld* World = GetWorld();
+	if(!World) return;
+	
+	const auto GameMode = Cast<ASTUGameModeBase>(World->GetAuthGameMode());
+	if(!GameMode || !GetPawn()) return;
+	FVector Location = GetPawn()->GetActorLocation();
+	GameMode->OnUseActionInWorld.Broadcast(this, Location);
 }

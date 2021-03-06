@@ -139,3 +139,17 @@ struct FLevelData
 };
 
 DECLARE_MULTICAST_DELEGATE_OneParam(FOnLevelSelectedSignature, const FLevelData&);
+
+// user actions
+
+DECLARE_MULTICAST_DELEGATE_TwoParams(FOnUseActionInWorldSignature, const AController*, FVector&);
+
+// inventory
+
+UENUM(BlueprintType)
+enum class EZMBItemType: uint8
+{
+	MedKit,
+	Key,
+	Ammo
+};

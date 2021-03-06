@@ -8,6 +8,7 @@
 #include "Components/STUWeaponComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/ZMBInventoryComponent.h"
 
 ASTUPlayerCharacter::ASTUPlayerCharacter(const FObjectInitializer& ObjInit): Super(ObjInit)
 {
@@ -21,6 +22,8 @@ ASTUPlayerCharacter::ASTUPlayerCharacter(const FObjectInitializer& ObjInit): Sup
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
 	CameraComponent->SetupAttachment(SpringArmComponent);
 
+	InventoryComponent = CreateDefaultSubobject<UZMBInventoryComponent>("InventoryComponent");
+	
 	CameraCollisionComponent = CreateDefaultSubobject<USphereComponent>("CameraCollisionComponent");
 	CameraCollisionComponent->SetupAttachment(CameraComponent);
 	CameraCollisionComponent->SetSphereRadius(10.0f);
@@ -55,6 +58,7 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("SwitchWeapon", IE_Released, WeaponComponent, &USTUWeaponComponent::NextWeapon);
 	PlayerInputComponent->BindAction("Reload", IE_Released, WeaponComponent, &USTUWeaponComponent::Reload);
 	PlayerInputComponent->BindAction("SwitchCamera", IE_Pressed, this, &ASTUPlayerCharacter::SwitchCamera);
+	PlayerInputComponent->BindAction("UseMedKit", IE_Pressed, InventoryComponent, &UZMBInventoryComponent::UseMedKit);
 }
 
 void ASTUPlayerCharacter::LookUp(float Amount)

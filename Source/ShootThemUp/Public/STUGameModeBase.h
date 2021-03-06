@@ -20,6 +20,8 @@ public:
 	ASTUGameModeBase();
 	FOnMatchStateChangedSignature OnMatchStateChanged;
 	
+	FOnUseActionInWorldSignature OnUseActionInWorld;
+	
 	virtual void StartPlay() override;
 	virtual UClass* GetDefaultPawnClassForController_Implementation(AController* InController) override;
 
