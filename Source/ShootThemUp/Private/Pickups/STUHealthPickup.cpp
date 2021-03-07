@@ -19,10 +19,10 @@ bool ASTUHealthPickup::GivePickupTo(APawn* PlayerPawn)
 	
 	return HealthComponent->TryToAddHealth(HealthAmount);*/
 
-	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(PlayerPawn);
+	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(PlayerPawn);
 	if(!HealthComponent || HealthComponent->IsDead()) return false;
 	
-	const auto InventoryComponent = STUUtils::GetSTUPlayerComponent<UZMBInventoryComponent>(PlayerPawn);
+	const auto InventoryComponent = STUUtils::GetSTUActorComponent<UZMBInventoryComponent>(PlayerPawn);
 	if(!InventoryComponent) return false;
 	
 	return InventoryComponent->TryToAddItem(EZMBItemType::MedKit, Count);

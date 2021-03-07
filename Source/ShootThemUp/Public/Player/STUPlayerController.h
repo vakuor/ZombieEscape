@@ -31,4 +31,5 @@ private:
 	void OnMatchStateChanged(ESTUMatchState State);
 	void OnMuteSound();
 	void OnUseAction();
+	void UseAction();
 };

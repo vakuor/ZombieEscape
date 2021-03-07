@@ -99,7 +99,7 @@ struct FGameData
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Game", meta = (ClampMin = "1", ClampMax = "10"))
 	int32 RoundsNum = 4;
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Game", meta = (ClampMin = "3", ClampMax = "300"))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Game", meta = (ClampMin = "3", ClampMax = "1000"))
 	int32 RoundTime = 10; // in seconds
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
@@ -144,6 +144,8 @@ DECLARE_MULTICAST_DELEGATE_OneParam(FOnLevelSelectedSignature, const FLevelData&
 
 DECLARE_MULTICAST_DELEGATE_TwoParams(FOnUseActionInWorldSignature, const AController*, FVector&);
 
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnUseSignature, const AActor*);
+
 // inventory
 
 UENUM(BlueprintType)
@@ -153,3 +155,7 @@ enum class EZMBItemType: uint8
 	Key,
 	Ammo
 };
+
+// Game Mode Properties
+
+DECLARE_MULTICAST_DELEGATE(FOnExitUnlockedSignature);

@@ -18,6 +18,8 @@ public:
 	UZMBInventoryComponent();
 
 	void UseMedKit();
+	bool HasKey() const;
+	bool UseKey();
 	bool TryToAddItem(EZMBItemType Type, int Count);
 	
 protected:

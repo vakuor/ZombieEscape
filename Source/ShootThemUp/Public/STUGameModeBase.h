@@ -21,6 +21,10 @@ public:
 	FOnMatchStateChangedSignature OnMatchStateChanged;
 	
 	FOnUseActionInWorldSignature OnUseActionInWorld;
+
+	FOnUseSignature OnUseSignature;
+	
+	FOnExitUnlockedSignature OnExitUnlocked;
 	
 	virtual void StartPlay() override;
 	virtual UClass* GetDefaultPawnClassForController_Implementation(AController* InController) override;

@@ -18,7 +18,7 @@ void USTUChangeWeaponService::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	const auto Controller = OwnerComp.GetAIOwner();
 	if(Controller)
 	{
-		const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponComponent>(Controller->GetPawn());
+		const auto WeaponComponent = STUUtils::GetSTUActorComponent<USTUWeaponComponent>(Controller->GetPawn());
 		if(WeaponComponent && Probability > 0 && FMath::FRand() <= Probability)
 		{
 			WeaponComponent->NextWeapon();

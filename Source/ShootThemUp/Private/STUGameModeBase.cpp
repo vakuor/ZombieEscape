@@ -128,7 +128,7 @@ void ASTUGameModeBase::StartRespawn(AController* Controller)
 {
 	const auto RespawnAvailable = RoundCountDown > MinRoundTimeForRespawn + GameData.RespawnTime;
 	if(!RespawnAvailable) return;
-	const auto RespawnComponet = STUUtils::GetSTUPlayerComponent<USTURespawnComponent>(Controller);
+	const auto RespawnComponet = STUUtils::GetSTUActorComponent<USTURespawnComponent>(Controller);
 	if(!RespawnComponet) return;
 
 	RespawnComponet->Respawn(GameData.RespawnTime);

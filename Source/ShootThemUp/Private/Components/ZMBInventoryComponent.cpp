@@ -18,7 +18,7 @@ UZMBInventoryComponent::UZMBInventoryComponent()
 
 void UZMBInventoryComponent::UseMedKit()
 {
-	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(GetOwner());
+	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(GetOwner());
 	if (!HealthComponent)
 	{
 		UE_LOG(LogInventoryComponent, Warning,
@@ -43,6 +43,25 @@ void UZMBInventoryComponent::UseMedKit()
 	{
 		UE_LOG(LogInventoryComponent, Display, TEXT("Unable to add health!"));
 	}
+}
+
+bool UZMBInventoryComponent::HasKey() const
+{
+	return KeysCount > 0 ? true : false;
+}
+
+bool UZMBInventoryComponent::UseKey()
+{
+	if (KeysCount <= 0)
+	{
+		UE_LOG(LogInventoryComponent, Display,
+               TEXT("Keys count already: %d"), KeysCount);
+		return false;
+	}
+
+	KeysCount--;
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), KeyUseSound, GetOwner()->GetActorLocation());
+	return true;
 }
 
 bool UZMBInventoryComponent::TryToAddItem(EZMBItemType Type, int Count)
