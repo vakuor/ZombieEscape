@@ -1,9 +1,6 @@
 // Shoot Them Up Game. All rights reserved!
 
 #include "Components/STUWeaponComponent.h"
-
-
-
 #include "STUUtils.h"
 #include "Animations/STUEquipFinishedAnimNotify.h"
 #include "Animations/STUReloadFinishedAnimNotify.h"
@@ -110,7 +107,6 @@ void USTUWeaponComponent::EquipWeapon(int32 WeaponIndex)
 void USTUWeaponComponent::StartFire()
 {
 	if (!CanFire()) return;
-	UE_LOG(LogWeaponComponent, Error, TEXT("ATTACK POSLE"));
 	CurrentWeapon->StartFire();
 }
 

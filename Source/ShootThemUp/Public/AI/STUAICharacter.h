@@ -23,15 +23,15 @@ public:
 	virtual void Tick(float DeltaTime) override; //todo: здесь можно переделать не через тик, а через таймер отображение полоски
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Animation")
-	UAnimMontage* Animation;
+	TArray<UAnimMontage*> AttackAnimations;
+
+	void PlayRandomAttackAnimation();
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	UWidgetComponent* HealthWidgetComponent;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Components")
 	float HealthVisibilityDistance = 1000.0f;
-	
-	
 	
 	virtual void BeginPlay() override;
 	
@@ -40,4 +40,5 @@ protected:
 
 private:
 	void UpdateHealthWidgetVisibility();
+	UAnimMontage* TakeRandomAttackAnim();
 };

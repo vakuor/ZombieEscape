@@ -155,5 +155,4 @@ void ASTUPlayerCharacter::OnDeath()
 	{
 		Controller->ChangeState(NAME_Spectating);
 	}
-	
 }

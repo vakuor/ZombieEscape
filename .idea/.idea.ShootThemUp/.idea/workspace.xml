@@ -6,19 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6a73d0-0092-469f-b7cb-cf8df667365e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BT_STUCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_STUCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BP_Zombie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_Zombie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_Zombie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_Zombie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Attack.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STUFistWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STUFistWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/Services/STUFireService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/Services/STUFireService.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUFistWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUFistWeapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUFistWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUFistWeapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +31,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_Navmesh.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/Misc/AssertionMacros.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/Logging/TokenizedMessage.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Private/DataChannel.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/GameFramework/Pawn.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeTypes.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Landscape/Private/LandscapeRender.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/ProfilingDebugging/ProfilingHelpers.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/ProfilingDebugging/ABTesting.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Editor/DetailCustomizations/Private/AudioSettingsDetails.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Editor/Persona/Private/SRetargetSourceWindow.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Private/Math/UnrealMath.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Public/DrawDebugHelpers.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Landscape/Private/LandscapeSplineRaster.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/Mac/MacPlatformProcess.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Classes/Perception/AIPerceptionListenerInterface.h" root0="FORCE_HIGHLIGHTING" />
@@ -43,20 +53,24 @@
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Classes/BehaviorTree/Decorators/BTDecorator_IsAtLocation.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/HeadMountedDisplay/Private/XRTrackingSystemBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/HeadMountedDisplay/Public/HeadMountedDisplayTypes.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Private/Perception/AIPerceptionComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" />
-      <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/STUPlayerCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" />
-      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUFistWeapon.h" />
-      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/Services/STUFireService.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUFistWeapon.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/STUPlayerCharacter.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUFistWeapon.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pObA8nfJteRb2mcxNczmBjI1Kq" />
@@ -296,7 +310,7 @@
       <workItem from="1615065264227" duration="416000" />
       <workItem from="1615065750918" duration="1312000" />
       <workItem from="1615112533325" duration="11160000" />
-      <workItem from="1615130219026" duration="3343000" />
+      <workItem from="1615130219026" duration="10551000" />
     </task>
     <servers />
   </component>
