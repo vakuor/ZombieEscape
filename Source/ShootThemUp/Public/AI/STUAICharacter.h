@@ -8,7 +8,7 @@
 
 class UBehaviorTree;
 class UWidgetComponent;
-
+class UAnimMontage;
 UCLASS()
 class SHOOTTHEMUP_API ASTUAICharacter : public ASTUBaseCharacter
 {
@@ -22,12 +22,16 @@ public:
 
 	virtual void Tick(float DeltaTime) override; //todo: здесь можно переделать не через тик, а через таймер отображение полоски
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Animation")
+	UAnimMontage* Animation;
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	UWidgetComponent* HealthWidgetComponent;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Components")
 	float HealthVisibilityDistance = 1000.0f;
+	
+	
 	
 	virtual void BeginPlay() override;
 	

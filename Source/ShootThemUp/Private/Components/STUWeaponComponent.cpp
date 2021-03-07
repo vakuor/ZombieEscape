@@ -7,6 +7,7 @@
 #include "STUUtils.h"
 #include "Animations/STUEquipFinishedAnimNotify.h"
 #include "Animations/STUReloadFinishedAnimNotify.h"
+#include "Animations/STUAttackAnimNotify.h"
 #include "Animations/AnimUtils.h"
 #include "GameFramework/Character.h"
 #include "Weapon/STUBaseWeapon.h"
@@ -109,12 +110,14 @@ void USTUWeaponComponent::EquipWeapon(int32 WeaponIndex)
 void USTUWeaponComponent::StartFire()
 {
 	if (!CanFire()) return;
+	UE_LOG(LogWeaponComponent, Error, TEXT("ATTACK POSLE"));
 	CurrentWeapon->StartFire();
 }
 
 void USTUWeaponComponent::StopFire()
 {
 	if (!CurrentWeapon) return;
+	
 	CurrentWeapon->StopFire();
 }
 

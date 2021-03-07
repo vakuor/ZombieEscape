@@ -9,6 +9,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Components/STUWeaponComponent.h"
 
+DEFINE_LOG_CATEGORY_STATIC(LogFireService, All, All)
 USTUFireService::USTUFireService()
 {
 	NodeName = "Fire";
