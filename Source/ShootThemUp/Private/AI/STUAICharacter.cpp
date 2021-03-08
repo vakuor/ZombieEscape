@@ -37,6 +37,13 @@ void ASTUAICharacter::Tick(float DeltaTime)
 	UpdateHealthWidgetVisibility();
 }
 
+void ASTUAICharacter::PlayRandomAttackAnimation()
+{
+	auto AttackAnimation= TakeRandomAttackAnim();
+	if(!AttackAnimation) return;
+	PlayAnimMontage(AttackAnimation);
+}
+
 void ASTUAICharacter::UpdateHealthWidgetVisibility()
 {
 	UWorld* World = GetWorld();
@@ -48,6 +55,14 @@ void ASTUAICharacter::UpdateHealthWidgetVisibility()
 	const auto PlayerLocation = GetWorld()->GetFirstPlayerController()->GetPawnOrSpectator()->GetActorLocation();
 	const auto Distance = FVector::Distance(PlayerLocation, GetActorLocation());
 	HealthWidgetComponent->SetVisibility(Distance < HealthVisibilityDistance, true);
+}
+
+UAnimMontage* ASTUAICharacter::TakeRandomAttackAnim()
+{
+	if(AttackAnimations.Num() <= 0) return nullptr;
+	int32 Chislo = FMath::RandRange(0,AttackAnimations.Num()-1);
+
+	return AttackAnimations[Chislo];
 }
 
 void ASTUAICharacter::BeginPlay()

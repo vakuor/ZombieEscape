@@ -1,12 +1,10 @@
 // Shoot Them Up Game. All rights reserved!
 
 #include "Components/STUWeaponComponent.h"
-
-
-
 #include "STUUtils.h"
 #include "Animations/STUEquipFinishedAnimNotify.h"
 #include "Animations/STUReloadFinishedAnimNotify.h"
+#include "Animations/STUAttackAnimNotify.h"
 #include "Animations/AnimUtils.h"
 #include "GameFramework/Character.h"
 #include "Weapon/STUBaseWeapon.h"
@@ -115,6 +113,7 @@ void USTUWeaponComponent::StartFire()
 void USTUWeaponComponent::StopFire()
 {
 	if (!CurrentWeapon) return;
+	
 	CurrentWeapon->StopFire();
 }
 

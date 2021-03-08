@@ -8,7 +8,7 @@
 
 class UBehaviorTree;
 class UWidgetComponent;
-
+class UAnimMontage;
 UCLASS()
 class SHOOTTHEMUP_API ASTUAICharacter : public ASTUBaseCharacter
 {
@@ -22,6 +22,10 @@ public:
 
 	virtual void Tick(float DeltaTime) override; //todo: здесь можно переделать не через тик, а через таймер отображение полоски
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Animation")
+	TArray<UAnimMontage*> AttackAnimations;
+
+	void PlayRandomAttackAnimation();
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	UWidgetComponent* HealthWidgetComponent;
@@ -36,4 +40,5 @@ protected:
 
 private:
 	void UpdateHealthWidgetVisibility();
+	UAnimMontage* TakeRandomAttackAnim();
 };
