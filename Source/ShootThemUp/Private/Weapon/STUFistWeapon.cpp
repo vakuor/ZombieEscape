@@ -36,7 +36,7 @@ void ASTUFistWeapon::MakeShot()
                                             UDamageType::StaticClass(), {GetOwner()}, this, GetController(), true);
 	auto Character = Cast<ASTUAICharacter>(GetOwner());
 	if (!Character) return;
-	DrawDebugSphere(GetWorld(),GetActorLocation(),DamageRadius,24,FColor::Red,false,5.0f);
+	//DrawDebugSphere(GetWorld(),GetActorLocation(),DamageRadius,24,FColor::Red,false,5.0f);
 	Character->PlayRandomAttackAnimation();
 	
 }
