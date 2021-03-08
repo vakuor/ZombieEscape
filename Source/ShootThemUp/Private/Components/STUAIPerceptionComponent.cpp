@@ -25,7 +25,7 @@ AActor* USTUAIPerceptionComponent::GetClosestEnemy() const
 	AActor* BestPawn = nullptr;
 	for (const auto PercieveActor : PercieveActors)
 	{
-		const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(PercieveActor);
+		const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(PercieveActor);
 
 		const auto PercievePawn = Cast<APawn>(PercieveActor);
 		const auto AreEnemies = PercievePawn && STUUtils::AreEnemies(Controller, PercievePawn->Controller);

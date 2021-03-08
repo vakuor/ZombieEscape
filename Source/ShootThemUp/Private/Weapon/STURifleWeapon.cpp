@@ -67,6 +67,7 @@ void ASTURifleWeapon::MakeShot()
 		//if( HitResult.Actor.IsValid() && HitResult.Actor->IsA())
 		MakeDamage(HitResult);
 		WeaponFXComponent->PlayImpactFX(HitResult);
+		
 		//UE_LOG(LogRifleWeapon, Display, TEXT("Bone: %s"), *HitResult.BoneName.ToString());
 	} /*else
 	{
@@ -109,6 +110,7 @@ void ASTURifleWeapon::InitFX()
 	if(!FireAudioComponent)
 	{
 		FireAudioComponent = UGameplayStatics::SpawnSoundAttached(FireSound, WeaponMesh, MuzzleSocketName);
+		FireAudioComponent->bAutoDestroy = false;
 	}
 	
 	SetMuzzleFXActive(true);
@@ -118,13 +120,22 @@ void ASTURifleWeapon::SetMuzzleFXActive(bool IsActive)
 {
 	if(MuzzleFXComponent)
 	{
+		if(IsActive)
+		{
+			MuzzleFXComponent->Activate();
+		}
+		else
+		{
+			MuzzleFXComponent->Deactivate();
+		}
 		//MuzzleFXComponent->SetPaused(!IsActive);
-		MuzzleFXComponent->SetVisibility(IsActive, true);
+		//MuzzleFXComponent->SetVisibility(IsActive, true);
 	}
 
 	if(FireAudioComponent)
 	{
 		IsActive ? FireAudioComponent->Play() : FireAudioComponent->Stop();
+		UE_LOG(LogRifleWeapon, Display, TEXT("%f"), FireAudioComponent->GetComponentLocation().Size());
 	}
 }
 

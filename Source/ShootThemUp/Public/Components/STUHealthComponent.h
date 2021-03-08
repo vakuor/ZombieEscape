@@ -45,13 +45,15 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Heal", meta = (EditCondition = "bAutoHeal", ClampMin = "0.0"))
 	float HealModifier = 1.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Heal")
+	float Health = 0.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="VFX")
 	TSubclassOf<UCameraShakeBase> CameraShake;
 
 	virtual void BeginPlay() override;
 private:
-	float Health = 0.0f;
 	FTimerHandle HealTimerHandle;
 
 	UFUNCTION()

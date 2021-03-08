@@ -8,6 +8,7 @@
 #include "Components/STUWeaponComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/ZMBInventoryComponent.h"
 
 ASTUPlayerCharacter::ASTUPlayerCharacter(const FObjectInitializer& ObjInit): Super(ObjInit)
 {
@@ -21,6 +22,8 @@ ASTUPlayerCharacter::ASTUPlayerCharacter(const FObjectInitializer& ObjInit): Sup
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
 	CameraComponent->SetupAttachment(SpringArmComponent);
 
+	InventoryComponent = CreateDefaultSubobject<UZMBInventoryComponent>("InventoryComponent");
+	
 	CameraCollisionComponent = CreateDefaultSubobject<USphereComponent>("CameraCollisionComponent");
 	CameraCollisionComponent->SetupAttachment(CameraComponent);
 	CameraCollisionComponent->SetSphereRadius(10.0f);
@@ -32,7 +35,7 @@ void ASTUPlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	check(CameraCollisionComponent);
-
+	SwitchCamera();
 	CameraCollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &ASTUPlayerCharacter::OnCameraCollisionBeginOverlap);
 	CameraCollisionComponent->OnComponentEndOverlap.AddDynamic(this, &ASTUPlayerCharacter::OnCameraCollisionEndOverlap);
 }
@@ -55,6 +58,7 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("SwitchWeapon", IE_Pressed, WeaponComponent, &USTUWeaponComponent::NextWeapon);
 	PlayerInputComponent->BindAction("Reload", IE_Released, WeaponComponent, &USTUWeaponComponent::Reload);
 	PlayerInputComponent->BindAction("SwitchCamera", IE_Pressed, this, &ASTUPlayerCharacter::SwitchCamera);
+	PlayerInputComponent->BindAction("UseMedKit", IE_Pressed, InventoryComponent, &UZMBInventoryComponent::UseMedKit);
 }
 
 void ASTUPlayerCharacter::LookUp(float Amount)
@@ -67,14 +71,14 @@ void ASTUPlayerCharacter::OnCameraCollisionBeginOverlap(UPrimitiveComponent* Ove
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	//todo: убрать
-	CheckCameraOverlap();
+	//CheckCameraOverlap();
 }
 
 void ASTUPlayerCharacter::OnCameraCollisionEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	//todo: убрать
-	CheckCameraOverlap();
+	//CheckCameraOverlap();
 }
 
 void ASTUPlayerCharacter::CheckCameraOverlap()

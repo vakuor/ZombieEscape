@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "STUBaseCharacter.h"
 #include "GameFramework/Actor.h"
 #include "STUBasePickup.generated.h"
 
@@ -21,8 +23,17 @@ protected:
 	USphereComponent* CollisionComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Pickup")
+	float PickupDistance = 100.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Pickup")
+	bool bRespawnable = true;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Pickup", meta = (EditCondition = "bRespawnable"));
 	float RespawnTime = 5.0f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Pickup")
+	bool Rotatable = true;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Sound")
 	USoundCue* PickupTakenSound;
 	
@@ -40,7 +51,8 @@ private:
 	FTimerHandle RespawnTimerHandle;
 	
 	virtual bool GivePickupTo(APawn* PlayerPawn);
-	
+
+	void OnWorldUseEvent(const AController* Controller, FVector& Position);
 	void PickupWasTaken();
 	void Respawn();
 	void GenerateRotationYaw();

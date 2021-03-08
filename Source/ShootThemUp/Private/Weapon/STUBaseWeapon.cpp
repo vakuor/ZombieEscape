@@ -192,5 +192,5 @@ UNiagaraComponent* ASTUBaseWeapon::SpawnMuzzleFX()
 		MuzzleSocketName,
 		FVector::ZeroVector,
 		FRotator::ZeroRotator,
-		EAttachLocation::SnapToTarget, true);
+		EAttachLocation::SnapToTarget, false);
 }

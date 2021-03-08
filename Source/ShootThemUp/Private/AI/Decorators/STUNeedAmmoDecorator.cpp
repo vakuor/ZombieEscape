@@ -18,7 +18,7 @@ bool USTUNeedAmmoDecorator::CalculateRawConditionValue(UBehaviorTreeComponent& O
 	const auto Controller = OwnerComp.GetAIOwner();
 	if(!Controller) return false;
 
-	const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponComponent>(Controller->GetPawn());
+	const auto WeaponComponent = STUUtils::GetSTUActorComponent<USTUWeaponComponent>(Controller->GetPawn());
 	if(!WeaponComponent) return false;
 
 	return WeaponComponent->NeedAmmo(WeaponType);

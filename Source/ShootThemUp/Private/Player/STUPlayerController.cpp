@@ -9,6 +9,8 @@
 #include "Components/STURespawnComponent.h"
 #include "GameFramework/GameModeBase.h"
 
+DEFINE_LOG_CATEGORY_STATIC(LogSTUPlayerController, All, All);
+
 ASTUPlayerController::ASTUPlayerController()
 {
 	RespawnComponent = CreateDefaultSubobject<USTURespawnComponent>("RespawnComponent");
@@ -41,6 +43,8 @@ void ASTUPlayerController::SetupInputComponent()
 	if(!InputComponent) return;
 
 	InputComponent->BindAction("PauseGame", IE_Pressed, this, &ASTUPlayerController::OnPauseGame);
+	InputComponent->BindAction("Mute", IE_Pressed, this, &ASTUPlayerController::OnMuteSound);
+	InputComponent->BindAction("Use", IE_Pressed, this, &ASTUPlayerController::UseAction);
 }
 
 void ASTUPlayerController::OnPauseGame()
@@ -72,4 +76,27 @@ void ASTUPlayerController::OnMuteSound()
 	if(!STUGameInstance) return;
 
 	STUGameInstance->ToggleVolume();
+}
+//deprecated
+void ASTUPlayerController::OnUseAction()
+{
+	UWorld* World = GetWorld();
+	if(!World) return;
+	
+	const auto GameMode = Cast<ASTUGameModeBase>(World->GetAuthGameMode());
+	if(!GameMode || !GetPawn()) return;
+	FVector Location = GetPawn()->GetActorLocation();
+	GameMode->OnUseActionInWorld.Broadcast(this, Location);
+}
+
+void ASTUPlayerController::UseAction()
+{
+	UWorld* World = GetWorld();
+	if(!World) return;
+	
+	const auto GameMode = Cast<ASTUGameModeBase>(World->GetAuthGameMode());
+	if(!GameMode) return;
+
+	UE_LOG(LogSTUPlayerController, Display, TEXT("On Use Action"));
+	GameMode->OnUseSignature.Broadcast(GetPawn());
 }
