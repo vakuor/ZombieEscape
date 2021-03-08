@@ -11,9 +11,10 @@ class SHOOTTHEMUP_API AZMBHealthInteractiveActor : public AZMBInteractiveActor
 {
 	GENERATED_BODY()
 
-protected:
+public:
 	virtual void OnUse_Implementation(const AActor* Caller) override;
 
+protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Properties")
 	int Count = 1;
 };

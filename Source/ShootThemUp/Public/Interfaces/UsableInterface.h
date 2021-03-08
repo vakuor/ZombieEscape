@@ -21,4 +21,6 @@ class SHOOTTHEMUP_API IUsableInterface
 protected:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category="Interaction")
     void OnUse(const AActor* Caller);
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category="Interaction")
+    bool CanBeUsed(const AActor* Caller);
 };

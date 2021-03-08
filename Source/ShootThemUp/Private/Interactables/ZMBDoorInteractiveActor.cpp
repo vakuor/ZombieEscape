@@ -6,6 +6,8 @@
 #include "STUGameModeBase.h"
 #include "STUUtils.h"
 #include "Components/ZMBInventoryComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogDoorInteractiveActor, All, All);
 
@@ -19,6 +21,10 @@ void AZMBDoorInteractiveActor::OnUse_Implementation(const AActor* Caller)
 	FVector CallerPosition = Caller->GetActorLocation();
 	if (FVector::Distance(GetActorLocation(), CallerPosition) <= InteractDistance && InventoryComponent->UseKey())
 	{
+		if(bPlaySoundOnInteract && InteractSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), InteractSound, GetActorLocation());
+		}
 		UE_LOG(LogDoorInteractiveActor, Display, TEXT("Actor has been interacted"));
 		Open();
 	}

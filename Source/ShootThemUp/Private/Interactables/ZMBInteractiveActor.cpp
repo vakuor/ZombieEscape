@@ -4,7 +4,8 @@
 #include "Interactables/ZMBInteractiveActor.h"
 
 #include "STUGameModeBase.h"
-#include "Interfaces/InteractInterface.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 AZMBInteractiveActor::AZMBInteractiveActor()
 {
@@ -20,7 +21,6 @@ void AZMBInteractiveActor::BeginPlay()
 		const auto GameMode = Cast<ASTUGameModeBase>(GetWorld()->GetAuthGameMode());
 		if(GameMode)
 		{
-			
 			GameMode->OnUseSignature.AddUObject(this, &AZMBInteractiveActor::OnUseExecute);
 		}
 	}

@@ -35,7 +35,7 @@ void ASTUPlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	check(CameraCollisionComponent);
-
+	SwitchCamera();
 	CameraCollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &ASTUPlayerCharacter::OnCameraCollisionBeginOverlap);
 	CameraCollisionComponent->OnComponentEndOverlap.AddDynamic(this, &ASTUPlayerCharacter::OnCameraCollisionEndOverlap);
 }
@@ -71,14 +71,14 @@ void ASTUPlayerCharacter::OnCameraCollisionBeginOverlap(UPrimitiveComponent* Ove
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	//todo: убрать
-	CheckCameraOverlap();
+	//CheckCameraOverlap();
 }
 
 void ASTUPlayerCharacter::OnCameraCollisionEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	//todo: убрать
-	CheckCameraOverlap();
+	//CheckCameraOverlap();
 }
 
 void ASTUPlayerCharacter::CheckCameraOverlap()

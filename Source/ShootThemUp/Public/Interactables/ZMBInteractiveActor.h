@@ -23,7 +23,7 @@ protected:
 	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Interaction")
-	float InteractDistance = 100.0f;
+	float InteractDistance = 200.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Interaction")
 	bool bPlaySoundOnInteract = false;

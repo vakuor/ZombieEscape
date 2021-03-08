@@ -5,6 +5,8 @@
 #include "STUUtils.h"
 #include "Components/STUWeaponComponent.h"
 #include "Components/ZMBInventoryComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogAmmoInteractiveActor, All, All);
 
@@ -25,6 +27,10 @@ void AZMBAmmoInteractiveActor::OnUse_Implementation(const AActor* Caller)
 	{
 		if(WeaponComponent->TryToAddAmmo(WeaponType, ClipsAmount))
 		{
+			if(bPlaySoundOnInteract && InteractSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), InteractSound, GetActorLocation());
+			}
 			UE_LOG(LogAmmoInteractiveActor, Display, TEXT("Actor has been interacted"));
 			Destroy();
 		}

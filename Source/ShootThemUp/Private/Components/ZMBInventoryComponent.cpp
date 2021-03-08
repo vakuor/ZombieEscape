@@ -60,7 +60,8 @@ bool UZMBInventoryComponent::UseKey()
 	}
 
 	KeysCount--;
-	UGameplayStatics::PlaySoundAtLocation(GetWorld(), KeyUseSound, GetOwner()->GetActorLocation());
+	if(KeyUseSound)
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), KeyUseSound, GetOwner()->GetActorLocation());
 	return true;
 }
 

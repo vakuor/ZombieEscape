@@ -4,6 +4,8 @@
 #include "Interactables/ZMBKeyInteractiveActor.h"
 #include "STUUtils.h"
 #include "Components/ZMBInventoryComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogKeyInteractiveActor, All, All);
 
@@ -18,6 +20,11 @@ void AZMBKeyInteractiveActor::OnUse_Implementation(const AActor* Caller)
 	if (FVector::Distance(GetActorLocation(), CallerPosition) <= InteractDistance && InventoryComponent->TryToAddItem(EZMBItemType::Key, Count))
 	{
 		UE_LOG(LogKeyInteractiveActor, Display, TEXT("Actor has been interacted"));
+
+		if(bPlaySoundOnInteract && InteractSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), InteractSound, GetActorLocation());
+		}
 		Destroy();
 	}
 }
