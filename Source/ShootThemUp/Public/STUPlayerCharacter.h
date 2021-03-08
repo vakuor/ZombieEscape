@@ -6,6 +6,7 @@
 #include "STUBaseCharacter.h"
 #include "STUPlayerCharacter.generated.h"
 
+class UZMBInventoryComponent;
 class UCameraComponent;
 class USpringArmComponent;
 class USphereComponent;
@@ -24,6 +25,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	UCameraComponent* CameraComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
+	UZMBInventoryComponent* InventoryComponent;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	USphereComponent* CameraCollisionComponent;

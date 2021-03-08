@@ -23,7 +23,7 @@ void USTUFireService::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMem
 
 	if(Controller)
 	{
-		const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponComponent>(Controller->GetPawn());
+		const auto WeaponComponent = STUUtils::GetSTUActorComponent<USTUWeaponComponent>(Controller->GetPawn());
 		if(WeaponComponent)
 		{
 			HasAim ? WeaponComponent->StartFire() : WeaponComponent->StopFire();

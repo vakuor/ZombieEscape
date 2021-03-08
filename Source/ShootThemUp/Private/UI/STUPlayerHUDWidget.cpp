@@ -12,7 +12,7 @@ DEFINE_LOG_CATEGORY_STATIC(LogPlayerHUDWidget, All, All);
 
 float USTUPlayerHUDWidget::GetHealthPercent() const
 {
-	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(GetOwningPlayerPawn());
+	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(GetOwningPlayerPawn());
 	if(!HealthComponent) return -1.0f;
 
 	return HealthComponent->GetHealthPercent();
@@ -20,7 +20,7 @@ float USTUPlayerHUDWidget::GetHealthPercent() const
 
 bool USTUPlayerHUDWidget::GetCurrentWeaponUIData(FWeaponUIData& UIData) const
 {
-	const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponComponent>(GetOwningPlayerPawn());
+	const auto WeaponComponent = STUUtils::GetSTUActorComponent<USTUWeaponComponent>(GetOwningPlayerPawn());
 	if(!WeaponComponent) return false;
 
 	return WeaponComponent->GetCurrentWeaponUIData(UIData);
@@ -28,7 +28,7 @@ bool USTUPlayerHUDWidget::GetCurrentWeaponUIData(FWeaponUIData& UIData) const
 
 bool USTUPlayerHUDWidget::GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const
 {
-	const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponComponent>(GetOwningPlayerPawn());
+	const auto WeaponComponent = STUUtils::GetSTUActorComponent<USTUWeaponComponent>(GetOwningPlayerPawn());
 	if(!WeaponComponent) return false;
 
 	return WeaponComponent->GetCurrentWeaponAmmoData(AmmoData);
@@ -36,7 +36,7 @@ bool USTUPlayerHUDWidget::GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const
 
 bool USTUPlayerHUDWidget::IsPlayerAlive() const
 {
-	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(GetOwningPlayerPawn());
+	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(GetOwningPlayerPawn());
 	return HealthComponent && !HealthComponent->IsDead();
 }
 
@@ -107,7 +107,7 @@ void USTUPlayerHUDWidget::OnHealthChanged(float Health, float HealthDelta)
 
 void USTUPlayerHUDWidget::OnNewPawn(APawn* NewPawn)
 {
-	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(NewPawn);
+	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(NewPawn);
 	if(HealthComponent && !HealthComponent->OnHealthChanged.IsBoundToObject(this))
 	{
 		HealthComponent->OnHealthChanged.AddUObject(this, &USTUPlayerHUDWidget::OnHealthChanged);

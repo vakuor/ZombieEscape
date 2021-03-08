@@ -18,7 +18,7 @@ bool USTUHealthPercentDecorator::CalculateRawConditionValue(UBehaviorTreeCompone
 	const auto Controller = OwnerComp.GetAIOwner();
 	if(!Controller) return false;
 
-	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(Controller->GetPawn());
+	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(Controller->GetPawn());
 	if(!HealthComponent || HealthComponent->IsDead()) return false;
 
 	return HealthComponent->GetHealthPercent() <= HealthPercent;
