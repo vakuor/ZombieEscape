@@ -31,7 +31,7 @@ public:
 
 protected:
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Health", meta = (ClampMin = "0.0", ClampMax = "100.0"))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Health", meta = (ClampMin = "0.0", ClampMax = "1000.0"))
 	float MaxHealth = 100.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Heal")
