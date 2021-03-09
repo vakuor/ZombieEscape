@@ -35,7 +35,7 @@ void ASTUGameModeBase::StartPlay()
 
 	SetMatchState(ESTUMatchState::InProgress);
 
-	OnWinDoorUnlocked.AddUObject(this, &ASTUGameModeBase::GameWinned);
+	OnExitUnlocked.AddUObject(this, &ASTUGameModeBase::GameWinned);
 }
 
 void ASTUGameModeBase::SpawnBots()
@@ -139,6 +139,9 @@ void ASTUGameModeBase::StartRespawn(AController* Controller)
 
 void ASTUGameModeBase::GameOver()
 {
+	if(GameRoundTimerHandle.IsValid())
+		GetWorldTimerManager().ClearTimer(GameRoundTimerHandle);
+		
 	UE_LOG(LogSTUGameModeBase, Display, TEXT("======= GAME OVER ======="));
 	LogPlayerInfo();
 
@@ -153,6 +156,9 @@ void ASTUGameModeBase::GameOver()
 
 void ASTUGameModeBase::GameWinned()
 {
+	if(GameRoundTimerHandle.IsValid())
+		GetWorldTimerManager().ClearTimer(GameRoundTimerHandle);
+	
 	UE_LOG(LogSTUGameModeBase, Display, TEXT("======= GAME WINNED ======="));
 	LogPlayerInfo();
 

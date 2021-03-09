@@ -3,12 +3,15 @@
 
 #include "STUPlayerCharacter.h"
 
+
+#include "STUGameModeBase.h"
 #include "Components/STUCharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/STUWeaponComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/ZMBInventoryComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 ASTUPlayerCharacter::ASTUPlayerCharacter(const FObjectInitializer& ObjInit): Super(ObjInit)
 {
@@ -158,5 +161,8 @@ void ASTUPlayerCharacter::OnDeath()
 	if (Controller)
 	{
 		Controller->ChangeState(NAME_Spectating);
+		auto GameMode = Cast<ASTUGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+		if(GameMode)
+			GameMode->GameOver();
 	}
 }

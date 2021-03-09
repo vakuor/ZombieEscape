@@ -26,8 +26,6 @@ public:
 	
 	FOnExitUnlockedSignature OnExitUnlocked;
 	
-	FOnWinDoorUnlockedSignature OnWinDoorUnlocked;
-	
 	virtual void StartPlay() override;
 	virtual UClass* GetDefaultPawnClassForController_Implementation(AController* InController) override;
 
@@ -39,6 +37,7 @@ public:
 
 	void RespawnRequest(AController* Controller);
 
+	void GameOver();
 	virtual bool SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate) override;
 	virtual bool ClearPause() override;
 protected:
@@ -72,7 +71,6 @@ private:
 
 	void StartRespawn(AController* Controller);
 
-	void GameOver();
 	void GameWinned();
 
 	void SetMatchState(ESTUMatchState State);
