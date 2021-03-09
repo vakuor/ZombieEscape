@@ -6,10 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6a73d0-0092-469f-b7cb-cf8df667365e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BT_STUCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_STUCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUFistWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUFistWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/CityLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CityLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_Zombie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_Zombie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_Attack3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Attack3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AO_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AO_BaseCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Down.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Down.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Middle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Middle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Up.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Up.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Jump.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Jump.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/Meshes/Characters/SK_Chr_ToplessMale_01_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/Meshes/Characters/SK_Chr_ToplessMale_01_Skeleton.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Classes/BehaviorTree/Decorators/BTDecorator_IsAtLocation.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/HeadMountedDisplay/Private/XRTrackingSystemBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/Misc/AssertionMacros.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Classes/Navigation/CrowdFollowingComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/GameFramework/Pawn.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeTypes.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Public/ProfilingDebugging/ProfilingHelpers.h" root0="FORCE_HIGHLIGHTING" />
@@ -42,8 +57,10 @@
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Editor/DetailCustomizations/Private/AudioSettingsDetails.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Core/Private/Math/UnrealMath.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/HeadMountedDisplay/Public/HeadMountedDisplayTypes.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/AIModule/Private/Perception/AIPerceptionComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Engine/Source/Runtime/UMG/Private/Components/Image.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -303,6 +320,8 @@
       <workItem from="1615112533325" duration="11160000" />
       <workItem from="1615130219026" duration="12298000" />
       <workItem from="1615194959534" duration="2925000" />
+      <workItem from="1615309462563" duration="274000" />
+      <workItem from="1615313515040" duration="935000" />
     </task>
     <servers />
   </component>

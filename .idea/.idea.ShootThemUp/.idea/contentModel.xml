@@ -49355,11 +49355,24 @@
               <e p="STUHealthComponent.cpp" t="Include" />
               <e p="STURespawnComponent.cpp" t="Include" />
               <e p="STUWeaponComponent.cpp" t="Include" />
+              <e p="ZMBInventoryComponent.cpp" t="Include" />
             </e>
             <e p="Dev" t="Include">
               <e p="STUDevDamageActor.cpp" t="Include" />
               <e p="STUFireDamageType.cpp" t="Include" />
               <e p="STUIceDamageType.cpp" t="Include" />
+            </e>
+            <e p="Interactables" t="Include">
+              <e p="ZMBAmmoInteractiveActor.cpp" t="Include" />
+              <e p="ZMBDoorInteractiveActor.cpp" t="Include" />
+              <e p="ZMBHealthInteractiveActor.cpp" t="Include" />
+              <e p="ZMBInteractiveActor.cpp" t="Include" />
+              <e p="ZMBKeyInteractiveActor.cpp" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="InteractInterface.cpp" t="Include" />
+              <e p="UsableInterface.cpp" t="Include" />
+              <e p="ZMBInteractableBase.cpp" t="Include" />
             </e>
             <e p="Menu" t="Include">
               <e p="STUMenuGameModeBase.cpp" t="Include" />
@@ -49374,6 +49387,7 @@
               <e p="STUAmmoPickup.cpp" t="Include" />
               <e p="STUBasePickup.cpp" t="Include" />
               <e p="STUHealthPickup.cpp" t="Include" />
+              <e p="ZMBKeyPickup.cpp" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="STUPlayerController.cpp" t="Include" />
@@ -49393,6 +49407,7 @@
               <e p="STUGameOverWidget.cpp" t="Include" />
               <e p="STUGoToMenuWidget.cpp" t="Include" />
               <e p="STUHealthBarWidget.cpp" t="Include" />
+              <e p="STUInventoryWidget.cpp" t="Include" />
               <e p="STUPauseWidget.cpp" t="Include" />
               <e p="STUPlayerHUDWidget.cpp" t="Include" />
               <e p="STUPlayerStatRowWidget.cpp" t="Include" />
@@ -49444,11 +49459,24 @@
               <e p="STUHealthComponent.h" t="Include" />
               <e p="STURespawnComponent.h" t="Include" />
               <e p="STUWeaponComponent.h" t="Include" />
+              <e p="ZMBInventoryComponent.h" t="Include" />
             </e>
             <e p="Dev" t="Include">
               <e p="STUDevDamageActor.h" t="Include" />
               <e p="STUFireDamageType.h" t="Include" />
               <e p="STUIceDamageType.h" t="Include" />
+            </e>
+            <e p="Interactables" t="Include">
+              <e p="ZMBAmmoInteractiveActor.h" t="Include" />
+              <e p="ZMBDoorInteractiveActor.h" t="Include" />
+              <e p="ZMBHealthInteractiveActor.h" t="Include" />
+              <e p="ZMBInteractiveActor.h" t="Include" />
+              <e p="ZMBKeyInteractiveActor.h" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="InteractInterface.h" t="Include" />
+              <e p="UsableInterface.h" t="Include" />
+              <e p="ZMBInteractableBase.h" t="Include" />
             </e>
             <e p="Menu" t="Include">
               <e p="STUMenuGameModeBase.h" t="Include" />
@@ -49463,6 +49491,7 @@
               <e p="STUAmmoPickup.h" t="Include" />
               <e p="STUBasePickup.h" t="Include" />
               <e p="STUHealthPickup.h" t="Include" />
+              <e p="ZMBKeyPickup.h" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="STUPlayerController.h" t="Include" />
@@ -49484,6 +49513,7 @@
               <e p="STUGameOverWidget.h" t="Include" />
               <e p="STUGoToMenuWidget.h" t="Include" />
               <e p="STUHealthBarWidget.h" t="Include" />
+              <e p="STUInventoryWidget.h" t="Include" />
               <e p="STUPauseWidget.h" t="Include" />
               <e p="STUPlayerHUDWidget.h" t="Include" />
               <e p="STUPlayerStatRowWidget.h" t="Include" />
