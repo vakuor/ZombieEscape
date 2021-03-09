@@ -146,6 +146,8 @@ DECLARE_MULTICAST_DELEGATE_TwoParams(FOnUseActionInWorldSignature, const AContro
 
 DECLARE_MULTICAST_DELEGATE_OneParam(FOnUseSignature, const AActor*);
 
+DECLARE_MULTICAST_DELEGATE(FOnWinDoorUnlockedSignature);
+
 // inventory
 
 UENUM(BlueprintType)

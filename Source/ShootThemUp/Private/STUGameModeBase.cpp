@@ -7,6 +7,7 @@
 #include "STUBaseCharacter.h"
 #include "STUUtils.h"
 #include "Components/STURespawnComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Player/STUPlayerController.h"
 #include "Player/STUPlayerState.h"
 #include "UI/STUGameHUD.h"
@@ -33,6 +34,8 @@ void ASTUGameModeBase::StartPlay()
 	StartRound();
 
 	SetMatchState(ESTUMatchState::InProgress);
+
+	OnWinDoorUnlocked.AddUObject(this, &ASTUGameModeBase::GameWinned);
 }
 
 void ASTUGameModeBase::SpawnBots()
@@ -137,6 +140,20 @@ void ASTUGameModeBase::StartRespawn(AController* Controller)
 void ASTUGameModeBase::GameOver()
 {
 	UE_LOG(LogSTUGameModeBase, Display, TEXT("======= GAME OVER ======="));
+	LogPlayerInfo();
+
+	for (auto Pawn : TActorRange<APawn>(GetWorld()))
+	{
+		Pawn->TurnOff();
+		Pawn->DisableInput(nullptr);
+	}
+
+	SetMatchState(ESTUMatchState::GameOver);
+}
+
+void ASTUGameModeBase::GameWinned()
+{
+	UE_LOG(LogSTUGameModeBase, Display, TEXT("======= GAME WINNED ======="));
 	LogPlayerInfo();
 
 	for (auto Pawn : TActorRange<APawn>(GetWorld()))
