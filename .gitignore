@@ -73,6 +73,14 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+<<<<<<< Updated upstream
+=======
+.idea/.idea.ShootThemUp/.idea/.name
+.idea/.idea.ShootThemUp/.idea/indexLayout.xml
+.idea/.idea.ShootThemUp/.idea/modules.xml
+.idea/.idea.ShootThemUp/.idea/projectSettingsUpdater.xml
+.idea/.idea.ShootThemUp/.idea/vcs.xml
+>>>>>>> Stashed changes
 ZombieEscape.rar
 ZombieEscape1.rar
 ZombieEscape2.rar
