@@ -6,48 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6a73d0-0092-469f-b7cb-cf8df667365e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/CityofBrass_Enemies/Meshes/Enemy/Corpse/animation/Corpse_Run_Forward.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/CityofBrass_Enemies/Meshes/Enemy/Corpse/animation/Corpse_Run_Forward.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Footsteps.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Footsteps.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/SCue_FS_Tile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/SCue_FS_Tile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/SCue_Launcher_Reload_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/SCue_Launcher_Reload_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Interactables/BP_ZMBAmmoInteractiveActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Interactables/BP_ZMBAmmoInteractiveActor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/CityLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CityLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Maps/Demonstration.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Maps/Demonstration.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/ABP_MAN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/ABP_MAN.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/AM_ManEquip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/AM_ManEquip.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/AO_Man.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/AO_Man.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/BS_ManWalk.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/BS_ManWalk.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Jump_Down.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Jump_Down.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Reloading.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Reloading.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Down.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Aiming_Idle_Down.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Jump.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Rifle_Jump.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Backward.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Backward.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Forward.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Forward.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Left.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Right.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/Walk_Right.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Sounds/Weapon/Rifle/SCue_RifleReload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Sounds/Weapon/Rifle/SCue_RifleReload.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameOver.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_PlayerHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerStatRow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_PlayerStatRow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerStatRowTitle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_PlayerStatRowTitle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STURespawnComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STURespawnComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameOverWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameOverWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUDWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUDWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStatRowWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStatRowWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STURespawnComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STURespawnComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/ZMBInventoryComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/ZMBInventoryComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameModeBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerHUDWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerHUDWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStatRowWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStatRowWidget.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +25,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/Editor/DetailCustomizations/Private/WindowsTargetSettingsDetails.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/ALAudio/Private/ALAudioSource.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/UE4Game.Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/Editor/ContentBrowser/Private/SContentBrowser.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/Editor/MainFrame/Private/Frame/MainFrameActions.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/Components/ActorComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.26/Engine/Source/Editor/DetailCustomizations/Private/LinuxTargetSettingsDetails.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -76,8 +43,6 @@
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUFistWeapon.cpp" />
-      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStatRowWidget.h" />
-      <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStatRowWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUDWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/ZMBInventoryComponent.h" />
@@ -87,10 +52,13 @@
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameOverWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STURespawnComponent.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STURespawnComponent.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStatRowWidget.h" />
       <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" />
+      <option value="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStatRowWidget.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pObA8nfJteRb2mcxNczmBjI1Kq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

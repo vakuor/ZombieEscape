@@ -30,11 +30,7 @@ protected:
 	UTextBlock* KillsTextBlock;
 
 	/*UPROPERTY(meta = (BindWidget))
-<<<<<<< Updated upstream
 	UTextBlock* DeathsTextBlock;*/
-=======
-	UTextBlock* DeathsTextBlock;
->>>>>>> Stashed changes
 
 	/*UPROPERTY(meta = (BindWidget))
 	UTextBlock* TeamTextBlock;*/
@@ -42,11 +38,8 @@ protected:
 	/*UPROPERTY(meta = (BindWidget))
 	UImage* PlayerIndicatorImage;*/
 
-<<<<<<< Updated upstream
 	/*UPROPERTY(meta = (BindWidget))
-=======
 	UPROPERTY(meta = (BindWidget))
->>>>>>> Stashed changes
 	UImage* TeamImage;*/
 };
 

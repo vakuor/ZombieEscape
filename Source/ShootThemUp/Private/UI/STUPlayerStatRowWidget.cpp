@@ -18,13 +18,7 @@ void USTUPlayerStatRowWidget::SetKills(const FText& Text)
 	if(!KillsTextBlock) return;
 	KillsTextBlock->SetText(Text);
 }
-<<<<<<< Updated upstream
-/*
-void USTUPlayerStatRowWidget::SetDeaths(const FText& Text)
-=======
-
 /*void USTUPlayerStatRowWidget::SetDeaths(const FText& Text)
->>>>>>> Stashed changes
 {
 	if(!DeathsTextBlock) return;
 	DeathsTextBlock->SetText(Text);
@@ -46,9 +40,4 @@ void USTUPlayerStatRowWidget::SetTeamColor(const FLinearColor& Color)
 {
 	if(!TeamImage) return;
 	TeamImage->SetColorAndOpacity(Color);
-<<<<<<< Updated upstream
 }*/
-=======
-}
-*/
->>>>>>> Stashed changes
