@@ -27,6 +27,12 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="UI")
 	bool GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const;
+	
+	UFUNCTION(BlueprintCallable, Category="UI")
+	int32 GetCurrentKeysCount() const;
+
+	UFUNCTION(BlueprintCallable, Category="UI")
+    int32 GetCurrentMedKitsCount() const;
 
 	UFUNCTION(BlueprintCallable, Category="UI")
 	bool IsPlayerAlive() const;

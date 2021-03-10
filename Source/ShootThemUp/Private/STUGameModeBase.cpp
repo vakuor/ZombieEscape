@@ -141,7 +141,17 @@ void ASTUGameModeBase::GameOver()
 {
 	if(GameRoundTimerHandle.IsValid())
 		GetWorldTimerManager().ClearTimer(GameRoundTimerHandle);
+<<<<<<< Updated upstream
 		
+=======
+
+	auto Controller = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+	if(Controller)
+	{
+		auto Component = Cast<USTURespawnComponent>(Controller->GetComponentByClass(USTURespawnComponent::StaticClass()));
+		Component->StopRespawnTimer();
+	}
+>>>>>>> Stashed changes
 	UE_LOG(LogSTUGameModeBase, Display, TEXT("======= GAME OVER ======="));
 	LogPlayerInfo();
 

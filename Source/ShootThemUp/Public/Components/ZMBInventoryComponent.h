@@ -25,6 +25,20 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventory", meta = (ClampMin = "0.0"))
 	int MedKitsCount = 0;
+public:
+	int32 GetMedKitsCount() const
+	{
+		//Count.Count = MedKitsCount;
+		return MedKitsCount;
+	}
+
+	int32 GetKeysCount() const
+	{
+		//Count.Count = KeysCount;
+		return KeysCount;
+	}
+
+protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventory", meta = (ClampMin = "0.0", ClampMax = "100.0"))
 	int MedKitHealModifier = 20;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Inventory")

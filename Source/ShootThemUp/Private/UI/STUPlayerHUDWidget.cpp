@@ -7,6 +7,7 @@
 #include "STUUtils.h"
 #include "Components/ProgressBar.h"
 #include "Components/STUWeaponComponent.h"
+#include "Components/ZMBInventoryComponent.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogPlayerHUDWidget, All, All);
 
@@ -34,6 +35,22 @@ bool USTUPlayerHUDWidget::GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const
 	return WeaponComponent->GetCurrentWeaponAmmoData(AmmoData);
 }
 
+int32 USTUPlayerHUDWidget::GetCurrentKeysCount() const
+{
+	const auto InventoryComponent = STUUtils::GetSTUActorComponent<UZMBInventoryComponent>(GetOwningPlayerPawn());
+	if(!InventoryComponent) return -1;
+
+	return InventoryComponent->GetKeysCount();
+}
+
+int32 USTUPlayerHUDWidget::GetCurrentMedKitsCount() const
+{
+	const auto InventoryComponent = STUUtils::GetSTUActorComponent<UZMBInventoryComponent>(GetOwningPlayerPawn());
+	if(!InventoryComponent) return -1;
+
+	return InventoryComponent->GetMedKitsCount();
+}
+
 bool USTUPlayerHUDWidget::IsPlayerAlive() const
 {
 	const auto HealthComponent = STUUtils::GetSTUActorComponent<USTUHealthComponent>(GetOwningPlayerPawn());
@@ -57,7 +74,7 @@ int32 USTUPlayerHUDWidget::GetKillsNum() const
 
 FString USTUPlayerHUDWidget::FormatBullets(int32 BulletsNum) const
 {
-	const int32 MaxLen = 3;
+	const int32 MaxLen = 2;
 	const TCHAR PrefixSymbol = '0';
 
 	auto BulletStr = FString::FromInt(BulletsNum);

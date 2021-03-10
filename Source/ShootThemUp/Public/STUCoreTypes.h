@@ -22,6 +22,15 @@ struct FAmmoData
 };
 
 USTRUCT(BlueprintType)
+struct FIntData
+{
+	GENERATED_USTRUCT_BODY()
+	
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Count")
+	int32 Count;
+};
+
+USTRUCT(BlueprintType)
 struct FWeaponData
 {
 	GENERATED_USTRUCT_BODY()

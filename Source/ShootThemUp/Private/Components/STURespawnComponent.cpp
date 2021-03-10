@@ -23,6 +23,15 @@ bool USTURespawnComponent::IsRespawnInProgress() const
 	return GetWorld() && GetWorld()->GetTimerManager().IsTimerActive(RespawnTimerHandle);
 }
 
+void USTURespawnComponent::StopRespawnTimer()
+{
+	if(!GetWorld()) return;
+	if(RespawnTimerHandle.IsValid())
+	{
+		GetWorld()->GetTimerManager().ClearTimer(RespawnTimerHandle);
+	}
+}
+
 void USTURespawnComponent::RespawnTimerUpdate()
 {
 	if(--RespawnCountDown == 0)

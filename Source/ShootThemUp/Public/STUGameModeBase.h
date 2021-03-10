@@ -16,7 +16,7 @@ class SHOOTTHEMUP_API ASTUGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 
-public:
+	public:
 	ASTUGameModeBase();
 	FOnMatchStateChangedSignature OnMatchStateChanged;
 	
@@ -40,7 +40,7 @@ public:
 	void GameOver();
 	virtual bool SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate) override;
 	virtual bool ClearPause() override;
-protected:
+	protected:
 	UPROPERTY(EditDefaultsOnly, Category="Game")
 	TSubclassOf<AAIController> AIControllerClass;
 
@@ -50,7 +50,7 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category="Game")
 	FGameData GameData;
 
-private:
+	private:
 	ESTUMatchState MatchState = ESTUMatchState::WaitingToStart;
 	int32 CurrentRound = 1;
 	int32 RoundCountDown = 0;
