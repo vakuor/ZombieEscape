@@ -6,11 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6a73d0-0092-469f-b7cb-cf8df667365e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/CityLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CityLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Maps/Demonstration.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Maps/Demonstration.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/ABP_MAN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PolygonCityZombies/Meshes/Characters/ABP_MAN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Effects/Meshes/Weapon/SM_MuzzleCone.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Effects/Meshes/Weapon/SM_MuzzleCone.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Weapons/Launcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Weapons/Launcher.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Weapons/Rifle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Weapons/Rifle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/Meshes/Characters/SK_Chr_ToplessMale_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/Meshes/Characters/SK_Chr_ToplessMale_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/Meshes/Props/SM_Prop_Barrel_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/Meshes/Props/SM_Prop_Barrel_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/ParticleFX/SM_Env_Rubble_Stone_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Polygon_BattleRoyale/ParticleFX/SM_Env_Rubble_Stone_01.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
