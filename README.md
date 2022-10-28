@@ -1,6 +1,7 @@
 # ZombieEscape
 
-Created by Vladislav vakuor Tkachev and my friend who doesn't have a github profile :\
+Created by Vladislav vakuor Tkachev and my friend who doesn't have a github profile :\  
+[actually have](https://github.com/Vladuxa555)
 
 ## About
 
